@@ -18,22 +18,23 @@ import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
 import java.awt.MouseInfo;
 
-public class Runner {
-
+public class Runner extends JPanel implements ActionListener, MouseListener, KeyListener, MouseMotionListener {
+	
+	int mouseY = MouseInfo.getPointerInfo().getLocation().y; 
+	int mouseX = MouseInfo.getPointerInfo().getLocation().x;
+	
 	public Runner() {
 		JFrame f = new JFrame("Cooking");
 		f.setSize(new Dimension(600, 600));
 		f.setBackground(Color.blue);
-		//f.add(this);
-		
-		
-		
+		f.add(this);
+		f.addMouseListener(this);
+		f.addMouseMotionListener(this);
+		f.addKeyListener(this);
 		f.setResizable(false);
 		f.setLayout(new GridLayout(1,2));
-		/*f.addMouseListener(this);
-		f.addKeyListener(this);
 		Timer t = new Timer(16, this);
-		t.start();*/
+		t.start();
 		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		f.setVisible(true);
 		
@@ -95,8 +96,18 @@ public class Runner {
 		// TODO Auto-generated method stub
 		
 	}
+	
+	@Override
+	public void mouseMoved(MouseEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
 
 }
+
+
+
+
 
 
 
