@@ -23,6 +23,10 @@ public class Runner extends JPanel implements ActionListener, MouseListener, Key
 	int mouseY = MouseInfo.getPointerInfo().getLocation().y; 
 	int mouseX = MouseInfo.getPointerInfo().getLocation().x;
 	
+	public static void main(String[] args) {
+		Runner f = new Runner();
+	}
+	
 	public Runner() {
 		JFrame f = new JFrame("Cooking");
 		f.setSize(new Dimension(600, 600));
@@ -40,10 +44,6 @@ public class Runner extends JPanel implements ActionListener, MouseListener, Key
 		
 	}
 	
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
 	
 	//@Override
 	public void mouseClicked(MouseEvent arg0) {
