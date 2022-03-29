@@ -18,7 +18,7 @@ import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
 import java.awt.MouseInfo;
 
-public class Runner extends JPanel implements ActionListener, MouseListener, KeyListener, MouseMotionListener {
+/*public class Runner extends JPanel implements ActionListener, MouseListener, KeyListener, MouseMotionListener {
 	
 	int mouseY = MouseInfo.getPointerInfo().getLocation().y; 
 	int mouseX = MouseInfo.getPointerInfo().getLocation().x;
@@ -38,7 +38,7 @@ public class Runner extends JPanel implements ActionListener, MouseListener, Key
 		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		f.setVisible(true);
 		
-	}
+	}*/
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
